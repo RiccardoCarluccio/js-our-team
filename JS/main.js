@@ -42,9 +42,9 @@ TEAM_MEMBERS.forEach(object => console.log(object));
 for (i = 0; i < TEAM_MEMBERS.length; i++) {
   const SINGLE_MEMBER = TEAM_MEMBERS[i];
 
-  document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div> <br>`;
+  document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div>`;
 
-  document.getElementById('team-container').innerHTML += `<img src="IMG/${SINGLE_MEMBER.profilePicture}" alt="Profile Picture">`;
+  document.getElementById('team-container').innerHTML += `<img src="IMG/${SINGLE_MEMBER.profilePic}" alt="Profile Picture"> <br>`;
 
   //da riprovare a fare con .createElement() e/o .append()
 }
