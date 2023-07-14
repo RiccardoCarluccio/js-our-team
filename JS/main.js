@@ -42,7 +42,18 @@ TEAM_MEMBERS.forEach(object => console.log(object));
 for (i = 0; i < TEAM_MEMBERS.length; i++) {
   const SINGLE_MEMBER = TEAM_MEMBERS[i];
 
-  document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div>`;
-} //da riprovare a fare con .createElement() e/o .append()
+  document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div> <br>`;
+
+  //da riprovare a fare con .createElement() e/o .append()
+  let singleMember = document.createElement('div');
+  singleMember.innerHTML = document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div> <br>`;
+
+  let divSpacer = document.createElement('div');  //perchè non funziona?
+  divSpacer.classList.add('spacer'); 
+}
 
 //TEAM_MEMBERS.profilePic
+
+for (i = 0; i < TEAM_MEMBERS.length; i++) {
+  document.createElement('div');
+}
