@@ -36,3 +36,5 @@ const TEAM_MEMBERS = [
     profilePic: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+TEAM_MEMBERS.forEach(object => console.log(object));
