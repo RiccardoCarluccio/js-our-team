@@ -4,9 +4,13 @@ img {
 }
 
 .flex-container {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
 }
 
 .mini-container {
