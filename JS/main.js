@@ -54,3 +54,12 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
 
   //da riprovare a fare con .createElement() e/o .append()
 }
+
+//aggiungere nuovi elementi tramite input HTML
+const BTN_INPUT = document.getElementById('input-data');
+
+BTN_INPUT.addEventListener('click', function createNewMember() {
+  const FIRST_NAME_INPUT = document.querySelector('[name="first-name"');
+  const LAST_NAME_INPUT = document.querySelector('[name="last-name"');
+  const JOB_POSITION_INPUT = document.querySelector('[name="job-position"');
+})
