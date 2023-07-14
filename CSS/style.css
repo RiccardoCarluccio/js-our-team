@@ -1,14 +1,12 @@
-img {
-  height: 250px;
-  width: auto;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.fixed-dimension {
-  height: 250px;
-  aspect-ratio: 1/1;
-  background-color: cadetblue;
-  color: white;
-  border: 1px dashed red;
+body {
+  padding-top: 1rem;
+  padding-bottom: 3rem;;
 }
 
 .flex-container {
@@ -21,7 +19,36 @@ img {
   text-align: center;
 }
 
+.medium-container {
+  height: 272px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mini-container {
+  height: 272px;
+  width: 250px;
   display: flex;
   flex-direction: column;
+}
+
+img {
+  height: 250px;
+  width: auto;
+}
+
+.text-dimension {
+  height: 18px;
+  width: 233.094px;
+  background-color: cadetblue;
+  color: white;
+}
+
+.pic-dimension {
+  height: 250px;
+  width: 233.094px;
+  background-color: lightcoral;
 }

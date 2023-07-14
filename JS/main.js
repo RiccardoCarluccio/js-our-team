@@ -45,8 +45,11 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
   document.getElementById('team-container').innerHTML += 
     `
       <div class="mini-container">
-        <div>
-          <div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} - ${SINGLE_MEMBER.jobPosition}</div>
+        <div class="bordered">
+          <div class="centered">
+            <div class="text-dimension">${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName}</div>
+            <div class="text-dimension">${SINGLE_MEMBER.jobPosition}</div>
+          </div>
           <img src="IMG/${SINGLE_MEMBER.profilePic}" alt="Profile Picture">
         </div>
       </div>
@@ -74,8 +77,11 @@ BTN_INPUT.addEventListener('click', function createNewMember() {
   document.getElementById('team-container').innerHTML += 
     `
       <div class="mini-container">
-        <div class="fixed-dimension">
-          <div>${NEW_MEMBER.firstName} ${NEW_MEMBER.lastName} ${NEW_MEMBER.jobPosition}</div>
+        <div class="medium-container bordered">
+          <div class="text-dimension">${NEW_MEMBER.firstName} ${NEW_MEMBER.lastName}</div>
+          <div class="text-dimension">${NEW_MEMBER.jobPosition}</div>
+          <div class="pic-dimension">
+          </div>
         </div>
       </div>
     `;

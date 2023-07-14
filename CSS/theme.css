@@ -1,0 +1,11 @@
+/* LAYOUT */
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* STYLE */
+.bordered {
+  border: 1px dashed darkgoldenrod;
+}
