@@ -86,3 +86,6 @@ BTN_INPUT.addEventListener('click', function createNewMember() {
       </div>
     `;
 })
+
+//si possono aggiungere immagini generate casualmente
+//al posto di div.pic-dimension > link lorem picsum ecc.
