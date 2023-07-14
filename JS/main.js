@@ -46,7 +46,7 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
     `
       <div class="mini-container">
         <div>
-          <div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition}</div>
+          <div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} - ${SINGLE_MEMBER.jobPosition}</div>
           <img src="IMG/${SINGLE_MEMBER.profilePic}" alt="Profile Picture">
         </div>
       </div>
@@ -62,4 +62,21 @@ BTN_INPUT.addEventListener('click', function createNewMember() {
   const FIRST_NAME_INPUT = document.querySelector('[name="first-name"');
   const LAST_NAME_INPUT = document.querySelector('[name="last-name"');
   const JOB_POSITION_INPUT = document.querySelector('[name="job-position"');
+
+  const NEW_MEMBER = {
+    firstName: FIRST_NAME_INPUT.value,
+    lastName: LAST_NAME_INPUT.value,
+    jobPosition: JOB_POSITION_INPUT.value,
+  }
+
+  TEAM_MEMBERS.push(NEW_MEMBER);
+
+  document.getElementById('team-container').innerHTML += 
+    `
+      <div class="mini-container">
+        <div class="fixed-dimension">
+          <div>${NEW_MEMBER.firstName} ${NEW_MEMBER.lastName} ${NEW_MEMBER.jobPosition}</div>
+        </div>
+      </div>
+    `;
 })

@@ -3,8 +3,16 @@ img {
   width: auto;
 }
 
+.fixed-dimension {
+  height: 250px;
+  aspect-ratio: 1/1;
+  background-color: cadetblue;
+  color: white;
+  border: 1px dashed red;
+}
+
 .flex-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: center;
