@@ -45,11 +45,10 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
   document.getElementById('team-container').innerHTML += 
     `
       <div class="mini-container">
-      <div>
-        <div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition}</div>
-        <img src="IMG/${SINGLE_MEMBER.profilePic}" alt="Profile Picture">
-      </div>
-      
+        <div>
+          <div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition}</div>
+          <img src="IMG/${SINGLE_MEMBER.profilePic}" alt="Profile Picture">
+        </div>
       </div>
     `;
 
