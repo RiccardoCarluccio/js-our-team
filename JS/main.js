@@ -44,3 +44,5 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
 
   document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div>`;
 } //da riprovare a fare con .createElement() e/o .append()
+
+//TEAM_MEMBERS.profilePic
