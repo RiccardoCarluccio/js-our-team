@@ -44,16 +44,7 @@ for (i = 0; i < TEAM_MEMBERS.length; i++) {
 
   document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div> <br>`;
 
+  document.getElementById('team-container').innerHTML += `<img src="IMG/${SINGLE_MEMBER.profilePicture}" alt="Profile Picture">`;
+
   //da riprovare a fare con .createElement() e/o .append()
-  let singleMember = document.createElement('div');
-  singleMember.innerHTML = document.getElementById('team-container').innerHTML += `<div>${SINGLE_MEMBER.firstName} ${SINGLE_MEMBER.lastName} ${SINGLE_MEMBER.jobPosition} ${SINGLE_MEMBER.profilePic}</div> <br>`;
-
-  let divSpacer = document.createElement('div');  //perchè non funziona?
-  divSpacer.classList.add('spacer'); //errore quì, probabilmente.
-}
-
-//TEAM_MEMBERS.profilePic
-
-for (i = 0; i < TEAM_MEMBERS.length; i++) {
-  document.createElement('div');
 }
